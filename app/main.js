@@ -10,13 +10,14 @@ function main() {
     webPreferences: {
       nodeIntegration: true
     },
-    width: 300,
-    height: 300,
+    width: 520,
+    height: 650,
+    //titlebarAppearsTransparent: true,
+    frame: false,
   })
 
   // load app/index.html as the window content
   mainWindow.loadFile(path.join('app', 'index.html'));
-
 }
 
 app.on('ready', main);
